@@ -1,6 +1,6 @@
 # movie-app - 
 A full web application where users can search for movies and create playlist.
-front-end - Html, css, Javascript
+front-end - Html, css, Javascript and
 Back-end - Node.js
 
 STEPS:
