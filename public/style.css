@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin: 50px;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+  
+}
+
+#search {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#searchInput::placeholder {
+  color: #aaa;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+#results {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#results ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#results li {
+    margin: 10px;
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+#results li:hover {
+    transform: scale(1.05); 
+}
+
+#results img {
+    display: block;
+    margin: 0 auto;
+    max-height: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#results span {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+   
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    position: relative; 
+}
+
+.modal img {
+    display: block;
+    margin: 0 auto 10px;
+    max-height: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.modal p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Close button style */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+} 
+
+/* PlayList */
+
+  h2 {
+    margin: 20px 0;
+    
+  }
+
+
+  #playlistForm {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  #playlistForm input[type="text"],
+  #playlistForm label {
+    margin: 5px;
+   
+  }
+  #playlistForm input[type="text"]{
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+  }
+  
+  #playlistForm input[type="text"]:focus{
+    outline: none;
+    border-color: #007bff;
+  }
+
+  #playlistForm button {
+    margin: 5px;
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  #playlistForm button:hover {
+    background-color: #2980b9;
+  }
+
+  #playlistList {
+    list-style: none;
+    padding: 0;
+  }
+
+   .playlist-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  .playlist-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .public-status {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+
+  .playlist-item .movies-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .playlist-item .movie-item {
+    margin-bottom: 20px;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .playlist-item .movie-poster {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .playlist-item .movie-poster:hover {
+    transform: scale(1.05);
+  }
+  
+  button {
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  button:hover {
+    background-color: #c0392b;
+  }
+
+  #share{
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .share-button:hover {
+    background-color: #2980b9;
+  } 
+
+
+
+
+
+
+ 
+  
+
+
+
+
+
+
+
+
+ 

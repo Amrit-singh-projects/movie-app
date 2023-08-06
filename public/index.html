@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>mymovieapp</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Search Movies</h1>
+    <!-- For Searching movies -->
+    <div id="search">
+        <input type="text" id="searchInput" placeholder="Type movie name">
+        <button onclick="searchMovies()">Enter Here</button>
+    </div>
+
+    <!-- For viewing Search results -->
+    <div id="results"></div>
+    
+    <!-- playlist -->
+    <h2>Create Playlist</h2>
+    <form id="playlistForm">
+      <input type="text" id="playlistName" placeholder="Enter playlist name" required>
+      <label for="isPublic">Public:</label>
+      <input type="checkbox" id="isPublic" name="isPublic">
+      <button type="submit">Create Playlist</button>
+      <input type="text" id="movieInput" placeholder="Enter movie name" >
+      <button type="button" id="addMovieBtn">Add Movie</button>
+      
+    </form> 
+
+       <h2>Your Playlists</h2>
+    <div id="playlistList"></div> 
+   
+    <script src="script.js"></script>
+</body>
+</html>
