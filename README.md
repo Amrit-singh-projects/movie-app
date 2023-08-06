@@ -1,16 +1,12 @@
-# movie-app - A full web application where users can search for movies and create playlist.
+# movie-app - 
+A full web application where users can search for movies and create playlist.
 front-end - Html, css, Javascript
 Back-end - Node.js
 
 STEPS:
-Clone this repository in your system.
+1. Clone this repository in your system.
+2. npm install - for installing all the dependencies
+3. npm start
+4. Go to http://localhost:5000
 
-## Installation
-$ npm install - for installing all the dependencies
 
-## Running the app
-# watch mode
-$ npm start
-$ npm run dev - (Nodemon will watch the server)
-
-## Go to http://localhost:5000
