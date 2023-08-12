@@ -2,9 +2,34 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    margin: 50px;
+    margin: 80px;
     background-color: #f2f2f2;
     line-height: 1.6;
+}
+#navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  border-radius:0 0 30px 30px;
+  color:white;
+  display: flex;
+  align-items: center;
+
+ 
+  
+  /*Define a height for NavBar*/
+  height:80px;
+  transition: 0.5s;
+  /*and a transition time for a smooth appearence*/
+  
+}
+
+#navbar p {
+ color: #c0392b;
+  margin-left: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 28px;
 }
 
 h1 {
@@ -268,6 +293,7 @@ h1 {
 
 
 
+ 
 
 
 
